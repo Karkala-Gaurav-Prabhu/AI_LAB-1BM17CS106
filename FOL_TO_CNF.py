@@ -3,7 +3,7 @@ di=prep.find('<=>')
 if di == -1:
     pass
 else:
-    print(di)
+    #print(di)
     prep=prep[0:di]+"=>"+prep[di+3:len(prep)]+" ^ "+prep[di+3:]+"=>"+prep[:di]
     print("\n1.Removing double implies:      "+prep)
 i=prep.find('=>')
