@@ -60,3 +60,20 @@ for i in prepn:
 prep+=')'
 print("\n6.Grouping into CNF form:       "+prep)
 
+'''
+output
+
+Enter the preposition logic:       (a=>b)^(b<=>c)
+
+1.Removing double implies:      (a=>b)^(b=>c) ^ c)=>(a=>b)^(b
+
+2.Removing single implies:      (!a v b)^!(!b v c) ^ c) v (!a v b)^(b
+
+3.Demorgan's Law:               (!a v b)^!!b  ^ ! c ^ c) v (!a v b)^(b
+
+4.Removing double negation:     (!a v b)^!!b  ^ ! c ^ c) v (!a v b)^(b
+
+5.Removing unwanted brackets:   !a v b^!!b  ^ ! c ^ c v !a v b^b
+
+6.Grouping into CNF form:       (!a v b) ^ (!!b  ) ^ ( ! c ) ^ ( c v !a v b) ^ (b)
+'''
